@@ -20,7 +20,7 @@ export class UserService {
     constructor (private http: Http) { }
     
     getUsers(): Observable<IUser[]> {
-        return this.http.get('http://www.json-generator.com/api/json/get/cvhYDEubZu?indent=4', commonHttpHeaders)
+        return this.http.get('http://www.json-generator.com/api/json/get/cpZZLDMuuW?indent=2', commonHttpHeaders)
             .map((res: Response) => res.json() as IUser[])
     }
 }

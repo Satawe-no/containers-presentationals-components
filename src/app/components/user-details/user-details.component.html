@@ -1,12 +1,11 @@
 <!-- [In] Start <user-details> -->
 <div>
-    <span>Photo : </span>
     <img [src]="details.picture" [alt]="details.name">
 
     <h1>{{ details.name }}</h1>
 
     <ul>
-        <li>{{ details.age }}</li>
+        <li>{{ details.age }} ans</li>
         <li>{{ details.phone }}</li>
         <li>{{ details.email }}</li>
         <li>Utilisateur actif : {{ isActive ? 'O' : 'X' }}</li>
