@@ -2,7 +2,7 @@
 
 ## Description
 
-Cette application est une démonstration de l'architecture Containers & Presentationals components aussi appelé Smart & Dumb components.
+Cette application est une démonstration de l'architecture Containers & Presentationals components.
 
 ## Lancer l'application
 
