@@ -42,7 +42,7 @@ Par défaut, à chaque changement d'état Angular va effectuer une passe sur cha
 En changeant la stratégie de détection des components à .OnPush, on modifie le comportement d'Angular, tout simplement en lui précisant que si les propriétés @Input du component pointent sur les mêmes références objet qu'avant le changement d'état de l'application, il n'a aucune raison de passer par le component .OnPush et ses enfants.
 
 ## Liens
-(https://toddmotto.com/stateful-stateless-components)[Stateful and stateless components, the missing manual]
-(https://medium.com/aviabird/complete-angular-2-guide-components-in-depth-96fca743966b)[Complete Angular 2 Guide: Components in Depth]
-(https://angular-2-training-book.rangle.io/handout/change-detection/change_detection_strategy_onpush.html)[Change Detection Strategy: OnPush]
-(https://vsavkin.com/change-detection-in-angular-2-4f216b855d4c)[Change Detection in Angular]
+https://toddmotto.com/stateful-stateless-components
+https://medium.com/aviabird/complete-angular-2-guide-components-in-depth-96fca743966b
+https://angular-2-training-book.rangle.io/handout/change-detection/change_detection_strategy_onpush.html
+https://vsavkin.com/change-detection-in-angular-2-4f216b855d4c
