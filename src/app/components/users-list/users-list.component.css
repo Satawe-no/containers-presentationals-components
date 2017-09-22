@@ -1,0 +1,12 @@
+.users-list {
+    width: 300px;
+}
+
+.user-row {
+    cursor: pointer;
+}
+
+.user-row.selected {
+    background-color: dodgerblue;
+    color: #fff;
+}

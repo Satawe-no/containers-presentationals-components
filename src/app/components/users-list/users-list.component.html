@@ -1,0 +1,11 @@
+<!-- [In] Start <users-list> -->
+<div *ngIf="users" class="users-list">
+    <ul class="user-row" *ngFor="let user of users" 
+        [ngClass]="{ selected: user._id == currentSelectedUserId }"
+        (click)="selectUser(user._id)">
+        
+        <li>{{ user.name }}</li>
+    
+      </ul>
+</div>
+<!-- [In] End <users-list> -->

@@ -1,0 +1,7 @@
+<!-- [Out] Start users-list> -->
+<users-list [users]="usersSummary$ | async" (selectedUser)="onSelectedUser($event)" [currentSelectedUserId]="currentUser"></users-list>
+<!-- [Out] End >users-list> -->
+
+<!-- [Out] Start <user-details> -->
+<user-details *ngIf="userInfo$ | async as userDetails" [details]="userDetails"></user-details>
+<!-- [Out] End <user-details> -->
