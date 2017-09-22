@@ -6,9 +6,10 @@ Cette application est une démonstration de l'architecture Containers & Presenta
 
 ## Lancer l'application
 
-1. Installer les packages : `yarn` OU `npm install`
-2. Lancer le serveur : `ng serve`
-3. Se rendre sur : `http://localhost:4200`
+1. Lancer `git clone https://github.com/Satawe-no/containers-presentationals-components.git`
+2. Installer les packages : `yarn` OU `npm install`
+3. Lancer le serveur : `ng serve`
+4. Se rendre sur : `http://localhost:4200`
 
 Pour lire la documentation : `yarn compodoc` OU `npm run compodoc`
 
