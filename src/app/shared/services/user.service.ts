@@ -12,14 +12,13 @@ import { IUser } from '../models/user';
 import { commonHttpHeaders } from './commonHttpHeaders';
 
 /**
- * UserService s'occupe des requêtes concernant les utilisateurs
+ * UserService s'occupe des requêtes vers le serveur
  */
 @Injectable()
 export class UserService {
 
     constructor (private http: Http) { }
-   
-    /** Retourne tous les utilisateurs sous forme d'observable */
+    
     getUsers(): Observable<IUser[]> {
         return this.http.get('http://www.json-generator.com/api/json/get/cvhYDEubZu?indent=4', commonHttpHeaders)
             .map((res: Response) => res.json() as IUser[])

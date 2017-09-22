@@ -33,7 +33,7 @@ export class UsersCtnComponent implements OnInit {
     private usersSummary$: Observable<IUserVM[]>;
     /** [Observable] L'ensemble des informations de l'utilisateur sélectionné (components/I-details) */
     private userInfo$: Observable<IUser>;
-    /** */
+    /** Id de l'utilisateur courrant */
     private currentUser: string;
 
     /** Appel UserService */
@@ -42,7 +42,7 @@ export class UsersCtnComponent implements OnInit {
     /** A l'init le résumé utilisateur est chargé */
     ngOnInit() {
         this.usersSummary$ = this.userService.getUsers()
-            .map(users => { console.log('users', users); return this.mapUserToUserVM(users)});
+            .map(users => this.mapUserToUserVM(users));
     }
 
     /** Endpoint de l'event venant de users-list. Appelle la fn qui permet de select les infos */

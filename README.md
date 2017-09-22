@@ -2,14 +2,13 @@
 
 ## Description
 
-Cette application est une démonstration de l'architecture Containers & Presentationals components.
+Cette application est une démonstration de l'architecture Containers & Presentationals components aussi appelé Smart & Dumb components.
 
 ## Lancer l'application
 
-1. Lancer `git clone https://github.com/Satawe-no/containers-presentationals-components.git`
-2. Installer les packages : `yarn` OU `npm install`
-3. Lancer le serveur : `ng serve`
-4. Se rendre sur : `http://localhost:4200`
+1. Installer les packages : `yarn` OU `npm install`
+2. Lancer le serveur : `ng serve`
+3. Se rendre sur : `http://localhost:4200`
 
 Pour lire la documentation : `yarn compodoc` OU `npm run compodoc`
 
@@ -42,7 +41,7 @@ Par défaut, à chaque changement d'état Angular va effectuer une passe sur cha
 En changeant la stratégie de détection des components à .OnPush, on modifie le comportement d'Angular, tout simplement en lui précisant que si les propriétés @Input du component pointent sur les mêmes références objet qu'avant le changement d'état de l'application, il n'a aucune raison de passer par le component .OnPush et ses enfants.
 
 ## Liens
-- https://toddmotto.com/stateful-stateless-components
-- https://medium.com/aviabird/complete-angular-2-guide-components-in-depth-96fca743966b
-- https://angular-2-training-book.rangle.io/handout/change-detection/change_detection_strategy_onpush.html
-- https://vsavkin.com/change-detection-in-angular-2-4f216b855d4c
+(https://toddmotto.com/stateful-stateless-components)[Stateful and stateless components, the missing manual]
+(https://medium.com/aviabird/complete-angular-2-guide-components-in-depth-96fca743966b)[Complete Angular 2 Guide: Components in Depth]
+(https://angular-2-training-book.rangle.io/handout/change-detection/change_detection_strategy_onpush.html)[Change Detection Strategy: OnPush]
+(https://vsavkin.com/change-detection-in-angular-2-4f216b855d4c)[Change Detection in Angular]
